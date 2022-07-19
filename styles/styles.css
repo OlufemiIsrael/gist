@@ -18,5 +18,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.6;
   color: #1e1e66;
+  overflow-x: hidden;
+  background-color: #0f0f3e;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=styles.css.map */
