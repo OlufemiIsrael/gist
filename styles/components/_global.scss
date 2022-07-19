@@ -13,11 +13,25 @@
   appearance: 0;
 }
 
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.6;
-    color: $gray900;
-    overflow-x: hidden;
-    background-color: $bg;
-    font-size: 0.9rem;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  color: $gray900;
+  overflow-x: hidden;
+  background-color: $bg;
+  font-size: 0.9rem;
+}
+
+section {
+  margin-top: 3rem;
+  width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $white;
+  line-height: 1.3rem;
 }
