@@ -37,9 +37,77 @@ h5 {
   line-height: 1.3rem;
 }
 
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 0.8rem 0 0.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  color: #f2f2fe;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container {
   width: 74%;
   max-width: 1800px;
   margin: 0 auto;
+}
+
+.avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  overflow: hidden;
+  border: 0.3rem solid #0f0f3e;
+  border-radius: 50%;
+}
+
+nav {
+  background-color: #6f6af8;
+  width: 100vw;
+  height: 4.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+nav button {
+  display: none;
+}
+
+nav .nav__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -35,3 +35,27 @@ h5 {
   color: $white;
   line-height: 1.3rem;
 }
+h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+h2 {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+h3 {
+  font-size: 1.1rem;
+  margin: 0.8rem 0 0.5rem;
+}
+h4 {
+  font-size: 1rem;
+}
+a {
+  color: $white;
+  transition: $transition;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}

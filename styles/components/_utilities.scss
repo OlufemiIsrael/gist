@@ -4,5 +4,12 @@
     width: $contWidthLg;
     max-width: 1800px;
     margin: 0 auto;
-    
+
+}
+.avatar{
+    width: 3.5rem;
+    height: 3.5rem;
+    overflow: hidden;
+    border: 0.3rem solid $bg;
+    border-radius: 50%;
 }
