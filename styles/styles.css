@@ -157,4 +157,9 @@ nav .nav__container .nav__items .nav__profile ul li a {
 nav .nav__container .nav__items .nav__profile ul li a:last-child() {
   background-color: #da0f3f;
 }
+
+nav .nav__container .nav__items .nav__profile ul li a:last-child {
+  background-color: #da0f3f;
+  color: #0f0f3e;
+}
 /*# sourceMappingURL=styles.css.map */
