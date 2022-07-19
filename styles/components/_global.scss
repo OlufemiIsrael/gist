@@ -1,0 +1,14 @@
+@import "variable";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  appearance: 0;
+}
