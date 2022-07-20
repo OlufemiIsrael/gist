@@ -131,6 +131,11 @@ nav .nav__container .nav__items .nav__profile {
   cursor: pointer;
 }
 
+nav .nav__container .nav__items .nav__profile:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
 nav .nav__container .nav__items .nav__profile ul {
   position: absolute;
   top: 125%;
@@ -145,6 +150,8 @@ nav .nav__container .nav__items .nav__profile ul {
   background-color: #1e1e66;
   -webkit-box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
 }
 
 nav .nav__container .nav__items .nav__profile ul li a {
@@ -154,11 +161,7 @@ nav .nav__container .nav__items .nav__profile ul li a {
   width: 100%;
 }
 
-nav .nav__container .nav__items .nav__profile ul li a:last-child() {
-  background-color: #da0f3f;
-}
-
-nav .nav__container .nav__items .nav__profile ul li a:last-child {
+nav .nav__container .nav__items .nav__profile ul li:last-child a {
   background-color: #da0f3f;
   color: #0f0f3e;
 }

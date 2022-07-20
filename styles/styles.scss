@@ -29,6 +29,10 @@ nav {
       .nav__profile {
         position: relative;
         cursor: pointer;
+        &:hover > ul {
+          opacity: 1;
+          visibility: visible;
+        }
         ul {
           position: absolute;
           top: 125%;
@@ -37,19 +41,18 @@ nav {
           flex-direction: column;
           background-color: $gray900;
           box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+          opacity: 0;
+          visibility: hidden;
           li {
             a {
               padding: 1rem;
               background-color: $gray900;
               display: block;
               width: 100%;
-              &:last-child() {
-                background-color: $red;
-              }
-              &:last-child {
-                background-color: $red;
-                color: $bg;
-              }
+            }
+            &:last-child a {
+              background-color: $red;
+              color: $bg;
             }
           }
         }
