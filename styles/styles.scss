@@ -74,11 +74,12 @@ nav {
         height: fit-content;
     }
 }
-// ================================ GENERAL POST ==========
+// =========================================== POSTS ==========================
 
-.post__thumbnail{
-    border-radius: 0 $cardBorderRadius5;
-    border: 1rem solid $gray900;
-    overflow: hidden;
-    margin-bottom: 1.6rem;
+
+.posts__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-bottom: 5rem;
 }

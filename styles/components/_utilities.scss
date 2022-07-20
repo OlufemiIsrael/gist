@@ -13,6 +13,12 @@
     border: 0.3rem solid $bg;
     border-radius: 50%;
 }
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
 // ================================ CATEGORY BUTTON ==========
 
 .category__btn{
@@ -47,4 +53,12 @@
     height: 3.5rem;
     border-radius: $cardBorderRadius3;
     overflow: hidden;
+}
+// ================================ GENERAL POST ==========
+
+.post__thumbnail{
+    border-radius: 0 $cardBorderRadius5;
+    border: 1rem solid $gray900;
+    overflow: hidden;
+    margin-bottom: 1.6rem;
 }

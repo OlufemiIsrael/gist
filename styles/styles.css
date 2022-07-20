@@ -83,6 +83,15 @@ img {
   border-radius: 50%;
 }
 
+.grid3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .category__btn {
   background-color: rgba(154, 104, 248, 0.18);
   color: #6f6af8;
@@ -123,6 +132,13 @@ img {
   height: 3.5rem;
   border-radius: 0.8rem;
   overflow: hidden;
+}
+
+.post__thumbnail {
+  border-radius: 0 5rem;
+  border: 1rem solid #1e1e66;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
 }
 
 nav {
@@ -228,10 +244,12 @@ nav .nav__container .nav__items .nav__profile ul li:last-child a {
   height: fit-content;
 }
 
-.post__thumbnail {
-  border-radius: 0 5rem;
-  border: 1rem solid #1e1e66;
-  overflow: hidden;
-  margin-bottom: 1.6rem;
+.posts__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=styles.css.map */
