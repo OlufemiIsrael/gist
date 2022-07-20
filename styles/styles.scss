@@ -61,3 +61,24 @@ nav {
     }
   }
 }
+// ================================ MAIN DISPLAY POST ==========
+
+.featured{
+    margin-top: 8rem;
+    .featured__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+    .post__thumbnail{
+        height: fit-content;
+    }
+}
+// ================================ GENERAL POST ==========
+
+.post__thumbnail{
+    border-radius: 0 $cardBorderRadius5;
+    border: 1rem solid $gray900;
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+}

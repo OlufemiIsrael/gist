@@ -13,3 +13,38 @@
     border: 0.3rem solid $bg;
     border-radius: 50%;
 }
+// ================================ CATEGORY BUTTON ==========
+
+.category__btn{
+    background-color: $primaryLight;
+    color: $primary;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: $cardBorderRadius1;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    &:hover{
+        color: $white;
+    }
+}
+
+.post{
+    &:hover .post__thumbnail img{
+        filter: saturate(0);
+        transition: filter 500ms ease-in-out;
+    }
+}
+
+.post__author{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+.post__author-avatar{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: $cardBorderRadius3;
+    overflow: hidden;
+}
