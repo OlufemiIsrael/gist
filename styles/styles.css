@@ -110,6 +110,7 @@ img {
 @media screen and (max-width: 1024px) {
   .avatar {
     margin-left: 2rem;
+    border: 0;
   }
 }
 
@@ -249,6 +250,7 @@ nav .nav__container .nav__items {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 0rem;
+    display: none;
   }
   nav .nav__container .nav__items li {
     width: 100%;
