@@ -57,6 +57,24 @@ nav {
           box-shadow: -2rem 3rem 7rem rgba(0, 0, 0, 0.7);
           background: $gray900;
           border-top: 1px solid $bg;
+          animation: dropdown 1s 0s ease forwards;
+          opacity: 0;
+          transform-origin: top;
+          &:nth-child(2){
+              animation-delay: 400ms;
+          }
+          &:nth-child(3){
+              animation-delay: 600ms;
+          }
+          &:nth-child(4){
+              animation-delay: 800ms;
+          }
+          &:nth-child(5){
+              animation-delay: 1s;
+          }
+          &:nth-child(6){
+              animation-delay: 1.2s;
+          }
           a{
               border-radius: 0;
               width: 100%;
