@@ -4,7 +4,10 @@
     width: $contWidthLg;
     max-width: 1800px;
     margin: 0 auto;
-
+    @media screen and (max-width:1024px) {
+        width: $contWidthMd;
+        
+    }
 }
 .avatar{
     width: 3.5rem;

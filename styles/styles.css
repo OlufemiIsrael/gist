@@ -47,9 +47,21 @@ h2 {
   margin: 1rem 0;
 }
 
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
 h3 {
   font-size: 1.1rem;
   margin: 0.8rem 0 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 h4 {
@@ -73,6 +85,12 @@ img {
   width: 74%;
   max-width: 1800px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 88%;
+  }
 }
 
 .avatar {
