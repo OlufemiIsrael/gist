@@ -145,6 +145,7 @@ nav {
     }
     @media screen and (max-width: 600px){
       grid-template-columns: 1fr;
+      gap: 0;
     }
   }
   .post__thumbnail {
@@ -162,6 +163,9 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
+  @media screen and (max-width: 600px){
+    grid-template-columns: 1fr;
+  }
 }
 // ===========================================  CATEGORIES ==========================
 
@@ -171,6 +175,12 @@ nav {
   border-bottom: 2px solid $gray900;
   .category__buttons-container {
     width: fit-content;
+    @media screen and (max-width: 600px){
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 400px){
+      grid-template-columns: 1fr;
+    }
   }
 }
 // ===========================================  FOOTER ==========================
