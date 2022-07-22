@@ -437,6 +437,15 @@ nav .nav__container .nav__items .nav__profile ul li:last-child a {
   height: fit-content;
 }
 
+.search__bar {
+  margin-top: 7rem;
+}
+
+.search__bar .search__bar-container {
+  position: relative;
+  width: 30rem;
+}
+
 .posts__container {
   display: -ms-grid;
   display: grid;

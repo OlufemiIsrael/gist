@@ -154,6 +154,16 @@ nav {
 }
 // =========================================== POSTS ==========================
 
+.search__bar{
+  margin-top: 7rem;
+  .search__bar-container{
+    position: relative;
+    width: 30rem;
+    
+  }
+}
+// =========================================== POSTS ==========================
+
 .posts__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
