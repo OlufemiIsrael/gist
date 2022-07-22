@@ -28,6 +28,12 @@ section {
   width: 100vw;
 }
 
+@media screen and (max-width: 600px) {
+  section {
+    margin-top: 2rem;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -40,6 +46,12 @@ h5 {
 h1 {
   font-size: 3rem;
   margin: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 h2 {
@@ -294,6 +306,8 @@ nav .nav__container .nav__items {
     opacity: 0;
     -webkit-transform-origin: top;
             transform-origin: top;
+    -webkit-perspective: 400px;
+            perspective: 400px;
   }
   nav .nav__container .nav__items li:nth-child(2) {
     -webkit-animation-delay: 400ms;
@@ -389,12 +403,31 @@ nav .nav__container .nav__items .nav__profile ul li:last-child a {
   margin-top: 8rem;
 }
 
+@media screen and (max-width: 600px) {
+  .featured {
+    margin-top: 6rem;
+  }
+}
+
 .featured .featured__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .featured .featured__container {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .featured .featured__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .featured .post__thumbnail {
@@ -410,6 +443,14 @@ nav .nav__container .nav__items .nav__profile ul li:last-child a {
       grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .posts__container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 
 .category__buttons {
@@ -480,6 +521,13 @@ footer .footer__container {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1024px) {
+  footer .footer__container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 footer ul li {

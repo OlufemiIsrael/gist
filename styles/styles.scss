@@ -60,6 +60,7 @@ nav {
           animation: dropdown 1s 0s ease forwards;
           opacity: 0;
           transform-origin: top;
+          perspective: 400px;
           &:nth-child(2){
               animation-delay: 400ms;
           }
@@ -132,10 +133,19 @@ nav {
 
 .featured {
   margin-top: 8rem;
+  @media screen and (max-width: 600px){
+    margin-top: 6rem;
+  }
   .featured__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    @media screen and (max-width: 1024px){
+      gap: 3rem;
+    }
+    @media screen and (max-width: 600px){
+      grid-template-columns: 1fr;
+    }
   }
   .post__thumbnail {
     height: fit-content;
@@ -148,6 +158,10 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   margin-bottom: 5rem;
+  @media screen and (max-width: 1024px){
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 // ===========================================  CATEGORIES ==========================
 
@@ -194,6 +208,9 @@ footer {
   .footer__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    @media screen and (max-width: 1024px){
+      grid-template-columns: 1fr 1fr;
+    }
   }
   ul {
     li {
