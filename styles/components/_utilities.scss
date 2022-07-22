@@ -59,6 +59,16 @@
     border-radius: $cardBorderRadius3;
     overflow: hidden;
 }
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 0.6rem 1.2rem;
+    background-color: $primary;
+    border-radius: $cardBorderRadius2;
+    cursor: pointer;
+    transition: $transition;
+    color: $white;
+}
 // ================================ GENERAL POST ==========
 
 .post__thumbnail{

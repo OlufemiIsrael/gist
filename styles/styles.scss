@@ -159,7 +159,25 @@ nav {
   .search__bar-container{
     position: relative;
     width: 30rem;
-    
+    background: $gray900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0.6rem 1rem;
+    border-radius: $cardBorderRadius2;
+    color: $gray300;
+    &> div{
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    input{
+      width: 100%;
+      background: transparent;
+      margin-left: 0.7rem;
+      padding: 0.5rem 0;
+    }
   }
 }
 // =========================================== POSTS ==========================
