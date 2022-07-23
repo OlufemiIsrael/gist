@@ -167,6 +167,12 @@ nav {
     padding: 0.6rem 1rem;
     border-radius: $cardBorderRadius2;
     color: $gray300;
+    @media screen and (max-width: 1024px) {
+      width: 60%;
+    }
+    @media screen and (max-width: 600px) {
+      width: $contWidthMd;
+    }
     &> div{
       width: 100%;
       display: flex;

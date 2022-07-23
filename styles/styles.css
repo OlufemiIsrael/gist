@@ -474,6 +474,18 @@ nav .nav__container .nav__items .nav__profile ul li:last-child a {
   color: rgba(242, 242, 254, 0.3);
 }
 
+@media screen and (max-width: 1024px) {
+  .search__bar .search__bar-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search__bar .search__bar-container {
+    width: 88%;
+  }
+}
+
 .search__bar .search__bar-container > div {
   width: 100%;
   display: -webkit-box;
