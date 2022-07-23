@@ -326,3 +326,39 @@ footer {
     margin-top: 4rem;
   }
 }
+// ===========================================  FORMS ==========================
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea, select{
+  padding: 0.8rem 1.4rem;
+}
+.form__section{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  .alert__message{
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: $cardBorderRadius2;
+  }
+  .alert__message.error{
+    background-color: $redLight;
+    color: $red;
+  }
+  .alert__message.success{
+    background-color: $greenLight;
+    color: $green;
+  }
+  .form__section-container{
+    width: $formWidth;
+  }
+  .form__control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
