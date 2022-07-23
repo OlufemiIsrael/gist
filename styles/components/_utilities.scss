@@ -1,90 +1,97 @@
 @import "variable";
 
-.container{
-    width: $contWidthLg;
-    max-width: 1800px;
-    margin: 0 auto;
-    @media screen and (max-width:1024px) {
-        width: $contWidthMd;
-    }
+.container {
+  width: $contWidthLg;
+  max-width: 1800px;
+  margin: 0 auto;
+  @media screen and (max-width: 1024px) {
+    width: $contWidthMd;
+  }
 }
-.avatar{
-    width: 3.5rem;
-    height: 3.5rem;
-    overflow: hidden;
-    border: 0.3rem solid $bg;
-    border-radius: 50%;
-    @media screen and (max-width: 1024px){
-        margin-left: 2rem;
-        border: 0;
-    }
+.avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  overflow: hidden;
+  border: 0.3rem solid $bg;
+  border-radius: 50%;
+  @media screen and (max-width: 1024px) {
+    margin-left: 2rem;
+    border: 0;
+  }
 }
-.grid3{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.empty__page {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 // ================================ CATEGORY BUTTON ==========
 
-.category__btn{
-    background-color: $primaryLight;
-    color: $primary;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    border-radius: $cardBorderRadius1;
-    font-weight: 600;
-    font-size: 0.8rem;
-    text-align: center;
-    &:hover{
-        color: $white;
-    }
-}
-
-.post{
-    &:hover .post__thumbnail img{
-        filter: saturate(0);
-        transition: filter 500ms ease-in-out;
-    }
-}
-
-.post__author{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1.2rem;
-}
-.post__author-avatar{
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: $cardBorderRadius3;
-    overflow: hidden;
-}
-.btn{
-    display: inline-block;
-    width: fit-content;
-    padding: 0.6rem 1.2rem;
-    background-color: $primary;
-    border-radius: $cardBorderRadius2;
-    cursor: pointer;
-    transition: $transition;
+.category__btn {
+  background-color: $primaryLight;
+  color: $primary;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: $cardBorderRadius1;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  &:hover {
     color: $white;
+  }
+}
+
+.post {
+  &:hover .post__thumbnail img {
+    filter: saturate(0);
+    transition: filter 500ms ease-in-out;
+  }
+}
+
+.post__author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.post__author-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: $cardBorderRadius3;
+  overflow: hidden;
+}
+.btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.6rem 1.2rem;
+  background-color: $primary;
+  border-radius: $cardBorderRadius2;
+  cursor: pointer;
+  transition: $transition;
+  color: $white;
 }
 // ================================ GENERAL POST ==========
 
-.post__thumbnail{
-    border-radius: 0 $cardBorderRadius5;
-    border: 1rem solid $gray900;
-    overflow: hidden;
-    margin-bottom: 1.6rem;
+.post__thumbnail {
+  border-radius: 0 $cardBorderRadius5;
+  border: 1rem solid $gray900;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
 }
 // ======================== Animation ===========================
 
-@keyframes dropdown{
-    0%{
-        transform: rotateX(90deg);
-    }
-    100%{
-        transform: rotateX(0deg);
-        opacity: 1;
-    }
+@keyframes dropdown {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
 }

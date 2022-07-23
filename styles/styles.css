@@ -134,6 +134,19 @@ img {
   gap: 1rem;
 }
 
+.empty__page {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .category__btn {
   background-color: rgba(154, 104, 248, 0.18);
   color: #6f6af8;
