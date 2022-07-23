@@ -557,6 +557,12 @@ nav .nav__container .nav__items .nav__profile ul li:last-child a {
   margin: 6rem 0 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .singlepost .avatar {
+    margin-left: 0;
+  }
+}
+
 .singlepost h2 {
   line-height: 1.3;
 }
