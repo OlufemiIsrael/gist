@@ -217,6 +217,26 @@ nav {
     }
   }
 }
+// =========================================== SINGLE POSTS ==========================
+
+.singlepost{
+  margin: 6rem 0 2rem;
+  .singlepost__thumbnail{
+    margin-top: 1.5rem 0 1rem;
+  }
+  .singlepost__container{
+    @media screen and (max-width: 600px){
+      background: transparent;
+    }
+    width: $formWidth;
+    background-color: $gray900;
+    padding: 1rem 2rem 3rem;
+    p{
+      margin-top: 1rem;
+      line-height: 1.7;
+    }
+  }
+}
 // ===========================================  FOOTER ==========================
 
 footer {
